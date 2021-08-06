@@ -6,37 +6,61 @@
 
 <body>
 	<form id="form1" action="scripts/upload.php" method="post" enctype="multipart/form-data">
-		
-		<label for="first_name">First name</label>
-		<label for="last_name">Last name</label><br>
-		<input type="text" id="first_name">
-		<input type="text" id="last_name"><br>
-
-		<label for="email">Email address</label>
-		<label for="tel">Telephone number</label><br>
-		<input type="text" id="email">
-		<input type="tel" id="tel"><br>
-		
-		<label for="address1">Address 1</label>
-		<label for="address2">Address 2</label><br>
-		<input type="text" id="address1">
-		<input type="text" id="address2"><br>
-		
-		<label for="town">Town</label>
-		<label for="county">County</label><br>
-		<input type="text" id="town">
-		<input type="text" id="county"><br>
-		
-		<label for="postcode">Postcode</label>
-		<label for="country">Country - this should be a dropdown</label><br>
-		<input type="text" id="postcode">
-		<input type="text" id="country"><br>
-		
-		<label for="description">Description</label><br>
-		<textarea rows="4" cols="50" name="description" form="form1"></textarea><br>
-		<a>Your C.V.</a>
-		<a>Select a file</a>
-		<input type="file" name="file_to_upload" id="file_to_upload">
+		<table>
+			<tr>
+				<td><label for="first_name">First name</label></td>
+				<td><label for="last_name">Last name</label><br></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="first_name"></td>
+				<td><input type="text" id="last_name"><br></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email address</label></td>
+				<td><label for="tel">Telephone number</label><br></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="email"></td>
+				<td><input type="tel" id="tel"><br></td>
+			</tr>
+			<tr>	
+				<td><label for="address1">Address 1</label></td>
+				<td><label for="address2">Address 2</label><br></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="address1"></td>
+				<td><input type="text" id="address2"><br></td>
+			</tr>
+			<tr>
+				<td><label for="town">Town</label></td>
+				<td><label for="county">County</label><br></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="town"></td>
+				<td><input type="text" id="county"><br></td>
+			</tr>
+			<tr>
+				<td><label for="postcode">Postcode</label></td>
+				<td><label for="country">Country - this should be a dropdown</label><br></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="postcode"></td>
+				<td><input type="text" id="country"><br></td>
+			</tr>
+			<tr>
+				<td><label for="description">Description</label><br></td>
+			</tr>
+			<tr>
+				<td><textarea rows="4" cols="50" name="description" form="form1"></textarea><br></td>
+			</tr>
+			<tr>	
+				<td>
+					<a>Your C.V.</a>
+					<a>Select a file</a>
+					<input type="file" name="file_to_upload" id="file_to_upload">
+				</td>
+			</tr>
+		</table>
 	</form>
 	<button type="submit" form="form1" value="Submit">Submit</button>
 </body>
