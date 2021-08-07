@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<form id="form1" action="scripts/upload.php" method="post" enctype="multipart/form-data">
+	<form id="form1" action="submit.php" method="post" enctype="multipart/form-data">
 		<table>
 			<tr>
 				<td><label for="first_name">First name</label></td>
@@ -20,7 +20,7 @@
 				<td><label for="tel">Telephone number</label><br></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="email"></td>
+				<td><input type="email" id="email"></td>
 				<td><input type="tel" id="tel"><br></td>
 			</tr>
 			<tr>	
@@ -41,11 +41,19 @@
 			</tr>
 			<tr>
 				<td><label for="postcode">Postcode</label></td>
-				<td><label for="country">Country - this should be a dropdown</label><br></td>
+				<td><label for="country">Country</label><br></td>
 			</tr>
 			<tr>
 				<td><input type="text" id="postcode"></td>
-				<td><input type="text" id="country"><br></td>
+				<td>
+					<select id="country">
+						<option value="de">Germany</option>
+						<option value="fr">France</option>
+						<option value="ie">Ireland</option>
+						<option value="nl">The Netherlands</option>
+						<option value="uk">United Kingdom</option>
+					</select>
+					<br></td>
 			</tr>
 			<tr>
 				<td><label for="description">Description</label><br></td>
@@ -55,7 +63,7 @@
 			</tr>
 			<tr>	
 				<td>
-					<a>Your C.V.</a>
+					<a>Your C.V.</a><br>
 					<a>Select a file</a>
 					<input type="file" name="file_to_upload" id="file_to_upload">
 				</td>
