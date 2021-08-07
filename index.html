@@ -7,71 +7,80 @@
 </head>
 
 <body>
-	<div id="center">
+	<div class="container">
 		<form id="form1" action="submit.php" method="post" enctype="multipart/form-data">
-			<table>
-				<tr>
-					<td><label class="left" for="first_name">First name</label></td>
-					<td><label class="right" for="last_name">Last name</label><br></td>
-				</tr>
-				<tr>
-					<td><input class="left" type="text" id="first_name"></td>
-					<td><input class="right" type="text" id="last_name"><br></td>
-				</tr>
-				<tr>
-					<td><label class="left" for="email">Email address</label></td>
-					<td><label class="right" for="tel">Telephone number</label><br></td>
-				</tr>
-				<tr>
-					<td><input class="left" type="email" id="email"></td>
-					<td><input class="right" type="tel" id="tel"><br></td>
-				</tr>
-				<tr>	
-					<td><label class="left" for="address1">Address 1</label></td>
-					<td><label class="right" for="address2">Address 2</label><br></td>
-				</tr>
-				<tr>
-					<td><input class="left" type="text" id="address1"></td>
-					<td><input class="right" type="text" id="address2"><br></td>
-				</tr>
-				<tr>
-					<td><label class="left" for="town">Town</label></td>
-					<td><label class="right" for="county">County</label><br></td>
-				</tr>
-				<tr>
-					<td><input class="left" type="text" id="town"></td>
-					<td><input class="right" type="text" id="county"><br></td>
-				</tr>
-				<tr>
-					<td><label class="left" for="postcode">Postcode</label></td>
-					<td><label class="right" for="country">Country</label><br></td>
-				</tr>
-				<tr>
-					<td><input class="left" type="text" id="postcode"></td>
-					<td>
-						<select class="right" id="country">
-							<option value="de">Germany</option>
-							<option value="fr">France</option>
-							<option value="ie">Ireland</option>
-							<option value="nl">The Netherlands</option>
-							<option value="uk">United Kingdom</option>
-						</select>
-						<br></td>
-				</tr>
-				<tr>
-					<td><label class="left" for="description">Description</label><br></td>
-				</tr>
-				<tr>
-					<td><textarea class="full" rows="4" cols="50" name="description" form="form1"></textarea><br></td>
-				</tr>
-				<tr>	
-					<td>
-						<a>Your C.V.</a><br>
-						<a>Select a file</a>
-						<input type="file" name="file_to_upload" id="file_to_upload">
-					</td>
-				</tr>
-			</table>
+			<div class="flex-container">
+				<div class="flex-item">
+					<label for="first_name">First name</label><br>
+					<input type="text" id="first_name">
+				</div>
+
+				<div class="flex-item">
+					<label for="last_name">Last name</label><br>
+					<input type="text" id="last_name">
+				</div>
+			
+				<div class="flex-item">
+					<label for="email">Email address</label><br>
+					<input type="email" id="email">
+				</div>
+
+				<div class="flex-item">
+					<label for="tel">Telephone number</label><br>
+					<input type="tel" id="tel">
+				</div>
+				
+				<div class="flex-item">
+					<label for="address1">Address 1</label><br>
+					<input type="text" id="address1">
+				</div>
+
+				<div class="flex-item">
+					<label for="address2">Address 2</label><br>
+					<input type="text" id="address2">
+				</div>
+			
+			
+				<div class="flex-item">
+					<label for="town">Town</label><br>
+					<input type="text" id="town">
+				</div>
+
+				<div class="flex-item">
+					<label for="county">County</label><br>
+					<input type="text" id="county">
+				</div>
+			
+			
+				<div class="flex-item">
+					<label for="postcode">Postcode</label><br>
+					<input type="text" id="postcode">
+				</div>
+
+				<div class="flex-item">
+					<label for="country">Country</label><br>
+					<select id="country">
+						<option value="de">Germany</option>
+						<option value="fr">France</option>
+						<option value="ie">Ireland</option>
+						<option value="nl">The Netherlands</option>
+						<option value="uk">United Kingdom</option>
+					</select>
+				</div>
+			
+				<div class="flex-item">
+					<label for="description">Description</label><br>	
+					<textarea class="full" rows="4" cols="50" name="description" form="form1"></textarea>
+				</div>
+				<br>
+				<div class="flex-item">
+					<a>Your C.V.</a>
+				</div>
+				<div class="flex-item">
+					<a>Select a file:</a>
+					<input type="file" name="file_to_upload" id="file_to_upload">
+				</div>
+			</div>
 		</form>
 		<button type="submit" form="form1" value="Submit" id="green">Submit</button>
 	</div>
