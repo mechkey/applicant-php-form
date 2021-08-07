@@ -2,12 +2,12 @@
 
 $first_name = htmlspecialchars(trim($_POST['first_name']));
 $last_name 	= htmlspecialchars(trim($_POST['last_name']));
-$email 		= htmlspecialchars(trim($_POST['email']))
-$tel 		= htmlspecialchars(trim($_POST['tel']))
+$email 		= htmlspecialchars(trim($_POST['email']));
+$tel 		= htmlspecialchars(trim($_POST['tel']));
 $address1	= htmlspecialchars(trim($_POST['address1']));
 $address2	= htmlspecialchars(trim($_POST['address2']));
-$town 		= htmlspecialchars(trim($_POST['town']))
-$county 	= htmlspecialchars(trim($_POST['county']))
+$town 		= htmlspecialchars(trim($_POST['town']));
+$county 	= htmlspecialchars(trim($_POST['county']));
 $postcode	= htmlspecialchars(trim($_POST['postcode']));
 $country	= htmlspecialchars(trim($_POST['country']));
 $description= htmlspecialchars(trim($_POST['description']));
@@ -44,5 +44,7 @@ if ($upload_check == 0) {
   }
 
 }
+
+echo $last_name;
 
 ?>

@@ -10,56 +10,57 @@
 	<div class="container">
 		<form id="form1" action="submit.php" method="post" enctype="multipart/form-data">
 			<div class="flex-container">
+
 				<div class="flex-item">
 					<label for="first_name">First name</label><br>
-					<input type="text" id="first_name">
+					<input type="text" form="form1" id="first_name" name="first_name">
 				</div>
 
 				<div class="flex-item">
 					<label for="last_name">Last name</label><br>
-					<input type="text" id="last_name">
+					<input type="text" form="form1" id="last_name" name="last_name">
 				</div>
 			
 				<div class="flex-item">
 					<label for="email">Email address</label><br>
-					<input type="email" id="email">
+					<input type="email" form="form1" id="email" name="email" required>
 				</div>
 
 				<div class="flex-item">
 					<label for="tel">Telephone number</label><br>
-					<input type="tel" id="tel">
+					<input type="tel" form="form1" id="tel" name="tel">
 				</div>
 				
 				<div class="flex-item">
 					<label for="address1">Address 1</label><br>
-					<input type="text" id="address1">
+					<input type="text" form="form1" name="address1" id="address1">
 				</div>
 
 				<div class="flex-item">
 					<label for="address2">Address 2</label><br>
-					<input type="text" id="address2">
+					<input type="text" form="form1" name="address2" id="address2">
 				</div>
 			
 			
 				<div class="flex-item">
 					<label for="town">Town</label><br>
-					<input type="text" id="town">
+					<input type="text" form="form1" name="town" id="town">
 				</div>
 
 				<div class="flex-item">
 					<label for="county">County</label><br>
-					<input type="text" id="county">
+					<input type="text" form="form1" name="county" id="county">
 				</div>
 			
 			
 				<div class="flex-item">
 					<label for="postcode">Postcode</label><br>
-					<input type="text" id="postcode">
+					<input type="text" form="form1" name="postcode" id="postcode">
 				</div>
 
 				<div class="flex-item">
 					<label for="country">Country</label><br>
-					<select id="country">
+					<select id="country" name="country">
 						<option value="de">Germany</option>
 						<option value="fr">France</option>
 						<option value="ie">Ireland</option>
@@ -69,10 +70,10 @@
 				</div>
 				<div class="flex-item" id="description-area">
 					<label for="description">Description</label><br>	
-					<textarea class="full" rows="7" cols="50" name="description" form="form1"></textarea>
+					<textarea rows="7" cols="50" name="description" form="form1"></textarea>
 				</div>
 				
-				<div class="flex-item">
+				<div class="flex-item" id="space">
 					<a>Your C.V.</a>
 				</div>
 
@@ -96,11 +97,8 @@
 				<div class="flex-item">
 					<!-- empty space for formatting -->
 				</div>
-
-			</div>
-		
-		
-		</form>
+			</form>
+		</div>
 	</div>
 </body>
 </html>

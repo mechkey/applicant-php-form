@@ -90,12 +90,18 @@ label {
 	border: none;
 }
 
-@media (min-width: 501px) {
+#space {
+	padding-top: 20%;
+}
+
+@media (min-width: 601px) {
+
 	.flex-container {
         flex-direction: row;
     }
+
     .flex-item {
-	  	width: 40%;
+	  	width: 20%;
 	  	padding-bottom: 5%;
 	}
 
@@ -104,5 +110,9 @@ label {
 		width: 100%;
 		margin-left: 5%;
 		margin-bottom: 5%;
-	}    
-}
+	}
+
+	#space {
+		padding-top: 5%;
+	}
+}    
