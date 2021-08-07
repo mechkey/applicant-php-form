@@ -64,25 +64,43 @@
 						<option value="fr">France</option>
 						<option value="ie">Ireland</option>
 						<option value="nl">The Netherlands</option>
-						<option value="uk">United Kingdom</option>
+						<option value="uk" selected>United Kingdom</option>
 					</select>
 				</div>
-			
-				<div class="flex-item">
+				<div class="flex-item" id="description-area">
 					<label for="description">Description</label><br>	
 					<textarea class="full" rows="4" cols="50" name="description" form="form1"></textarea>
 				</div>
-				<br>
+				
 				<div class="flex-item">
 					<a>Your C.V.</a>
 				</div>
+
+				<div class="flex-item">
+					<!-- empty space for formatting -->
+				</div>
+
 				<div class="flex-item">
 					<a>Select a file:</a>
 					<input type="file" name="file_to_upload" id="file_to_upload">
 				</div>
+
+				<div class="flex-item">
+					<!-- empty space for formatting -->
+				</div>
+
+				<div class="flex-item">
+					<button type="submit" form="form1" value="Submit" id="green">Submit</button>
+				</div>
+
+				<div class="flex-item">
+					<!-- empty space for formatting -->
+				</div>
+
 			</div>
+		
+		
 		</form>
-		<button type="submit" form="form1" value="Submit" id="green">Submit</button>
 	</div>
 </body>
 </html>
