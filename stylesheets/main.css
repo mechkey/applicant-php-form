@@ -14,13 +14,18 @@ html, body {
 	border-radius: 5px;
 	text-align: center;
 	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 }
 
-input {
+
+input[type=text,textarea] {
 	border-radius: 5px;
-	outline-color: grey;
+	border: solid 1px grey;
 }
+
+
 
 textarea {
 	border-radius: 5px;
@@ -81,6 +86,9 @@ label {
 	width: 100%;
 }
 
+#no-border {
+	border: none;
+}
 
 @media (min-width: 501px) {
 	.flex-container {
