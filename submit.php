@@ -3,7 +3,7 @@
 $first_name = htmlspecialchars(trim($_POST['first_name']));
 $last_name 	= htmlspecialchars(trim($_POST['last_name']));
 $email 		= htmlspecialchars(trim($_POST['email']));
-$tel 		= htmlspecialchars(trim($_POST['tel']));
+$tel 		  = htmlspecialchars(trim($_POST['tel']));
 $address1	= htmlspecialchars(trim($_POST['address1']));
 $address2	= htmlspecialchars(trim($_POST['address2']));
 $town 		= htmlspecialchars(trim($_POST['town']));
@@ -45,6 +45,27 @@ if ($upload_check == 0) {
 
 }
 
-echo $last_name;
+$to = $email;
+$subject = "Confirmation of submission";
+$headers = "From: hr@corporate.com" . "\r\n" .
+
+$msg = <<<MSG
+Hello!
+You submitted the following information in to our web form: <br>
+First name: $first_name <br>
+Last name: $last_name <br>
+Email: $email    <br>
+Telephone: $tel      <br>
+Address 1: $address1 <br>
+Address 2: $address2 <br>
+Town: $town     <br>
+County: $county   <br>
+Postcode: $postcode <br>
+Country: $country  <br>
+MSG;
+
+if(mail($to, $subject, $msg, $headers)) {
+    echo "Email sent.";
+}
 
 ?>
