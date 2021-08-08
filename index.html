@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<link rel="stylesheet" href="./stylesheets/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
-
+	<title>Contact Form</title>
 </head>
 
 <body>
+	<header>
+		<!-- placeholder -->
+	</header>
 	<div class="container">
 		<form id="form1" action="submit.php" method="post" enctype="multipart/form-data">
 			<div class="flex-container">
@@ -18,7 +21,7 @@
 
 				<div class="flex-item">
 					<label for="last_name">Last name</label><br>
-					<input type="text" form="form1" id="last_name" name="last_name" pattern="[A-Za-z ]?[']?[A-Za-z ]*">
+					<input type="text" form="form1" id="last_name" name="last_name" pattern="[A-Za-z ]?[']?[A-Za-z ]*" required>
 				</div>
 			
 				<div class="flex-item">
@@ -82,8 +85,8 @@
 				</div>
 
 				<div class="flex-item" id="no-border">
-					<a>Select a file:</a>
-					<input type="file" name="file_to_upload" id="file_to_upload">
+					<label for="file_to_upload">Select a file:</label>
+					<input type="file" name="file_to_upload" id="file_to_upload" required>
 				</div>
 
 				<div class="flex-item">

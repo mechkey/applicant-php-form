@@ -28,19 +28,18 @@ if ($_FILES["file_to_upload"]["size"] > 1000000) {
   $upload_check = 0;
 }
 
-if($file_extension != "doc" && $file_extension != "docx" && $file_extension != "txt"
-&& $file_extension != "pdf" ) {
-  echo "Please select a file with the extension DOC, DOCX, TXT or PDF";
+if($file_extension != "doc" && $file_extension != "docx" && $file_extension != "txt" && $file_extension != "pdf" ) {
+  echo "Please select a file with the extension DOC, DOCX, TXT or PDF. ";
   $upload_check = 0;
 }
 
 if ($upload_check == 0) {
-	echo "Sorry, your file could not be uploaded.";
+	echo "Sorry, your file could not be uploaded. ";
 } else {
 	if (move_uploaded_file($_FILES["file_to_upload"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["file_to_upload"]["name"])). " has been uploaded.";
+    echo "The file ". htmlspecialchars( basename( $_FILES["file_to_upload"]["name"])). " has been uploaded. ";
   } else {
-    echo "Sorry, there was an error uploading your file.";
+    echo "Sorry, there was an error uploading your file. ";
   }
 
 }
