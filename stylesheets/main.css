@@ -23,20 +23,31 @@ html, body {
 input {
 	margin-top: 2%;
 	border-radius: 5px;
-	border: solid 1px grey;
+	border: solid 1px;
 }
 
-
-
-textarea {
+select {
 	margin-top: 2%;
-	border-radius: 5px;
-	width: 95%;
-	outline-color: grey;
+}
+
+input:optional {
+  border: solid 1px #b7b7b7;
+}
+input:required {
+  border: solid 1px black;
+}
+
+input:focus {
+	border-color: solid 3px blue;
+}
+input:invalid {
+  border-color: red;
 }
 
 select {
 	border-radius: 5px;
+	border-color: #b7b7b7;
+
 }
 
 a {
@@ -90,8 +101,11 @@ label {
 	padding-top: 20%;
 }
 
-input:invalid {
-  border-color: pink;
+textarea {
+	margin-top: 2%;
+	border-radius: 5px;
+	width: 95%;
+	border-color: #b7b7b7;
 }
 
 
@@ -111,6 +125,7 @@ input:invalid {
 		width: 100%;
 		margin-left: 5%;
 		margin-bottom: 5%;
+		border-color: #b7b7b7;
 	}
 
 	#space {
